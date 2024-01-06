@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Figtree-Semibold';
+    src: url(/assets/fonts/static/Figtree-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Figtree-Extrabold';
+    src: url(/assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+:root {
+    /* colours */
+    --yellow: hsl(47, 88%, 63%);
+    --black: hsl(0, 0%, 7%);
+    --grey: hsl(0, 0%, 50%);
+    --white: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --semi-bold: 'Figtree-Semibold', sans-serif;
+    --extra-bold: 'Figtree-Extrabold', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+}
+p {
+    font-size: 1rem;
+    font-family: var(--semi-bold);
+}
+.content {
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid var(--black);
+    box-shadow: 10px 10px var(--black);
+    padding: 20px;
+    width: 350px;
+    background-color: var(--white);
+}
+.content > .image > img {
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.learning {
+    background-color: var(--yellow);
+    color: var(--black);
+    width: 90px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learning > p{
+    font-family: var(--extra-bold); 
+}
+.heading > h1 {
+    font-family: var(--extra-bold);
+    font-size: 1.8rem;
+}
+.info > p {
+    color: var(--grey);
+    line-height: 1.5rem;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.avatar > div > img {
+    width: 40px;
+}
+.avatar > div > p {
+    font-family: var(--extra-bold);
+}
